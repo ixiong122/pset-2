@@ -1,6 +1,16 @@
 const readLineSync=require("readline-sync");
 
-console.log("Enter three homework grades.");
-const hw=readlineSync( );
-const hw1=readlineSync( );
-const hw2=readlineSync( );
+const hw = Number(readLineSync.question("Enter three homework grades.\n"));
+const hw1 = Number(readLineSync.question(""));
+const hw2 = Number(readLineSync.question(""));
+const quiz= Number(readLineSync.question("\nEnter three quiz grades.\n"));
+const quiz1= Number(readLineSync.question(""));
+const quiz2= Number(readLineSync.question(""));
+const test= Number(readLineSync.question("\nEnter three test grades.\n"));
+const test1= Number(readLineSync.question(""));
+const test2=readLineSync.question("");
+let hwAverage = Number((hw + hw1 + hw2) / (3));
+let quizAverage=Number((quiz + quiz1 + quiz2 )/ (3));
+let testAverage=Number((test + test1 + test2 )/ (3));
+let finalGrade=Number((hwAverage*0.15) + (quizAverage*0.35) + (testAverage*0.5));
+console.log("Your marking period grade is "+finalGrade);
