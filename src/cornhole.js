@@ -1,5 +1,5 @@
 const length=48;
-const width=24
+const width=24;
 const diameter=6;
 const radius=diameter/2;
 const circleArea=((Math.pow(radius,2))*Math.PI);

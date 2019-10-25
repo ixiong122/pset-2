@@ -1,0 +1,9 @@
+const readLineSync=require("readline-sync");
+const annualSalary=readLineSync.question("\nAnnual salary: ")
+const preTax=.07;
+const federalIncomeTax=.157;
+const stateIncomeTax=.0447;
+const socialSecurityTax=.062;
+const medicareTax=.0145;
+let biweeklySalary=annualSalary/24;
+let preTaxSalary=biweeklySalary*(1-preTax);
