@@ -14,4 +14,4 @@ let quizAverage=Number((quiz + quiz1 + quiz2 )/ (3));
 let testAverage=Number((test + test1 + test2 )/ (3));
 let finalGrade=Number((hwAverage*0.15) + (quizAverage*0.35) + (testAverage*0.5));
 const formatted=finalGrade.toLocaleString("en", {minimumFractionDigits:2, maximumFractionDigits:2} );
-console.log("Your marking period grade is "+formatted+"%.");
+console.log("\nYour marking period grade is "+formatted+"%.");
